@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Anyar Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+
+  <link href="{%static 'css/assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{%static 'css/assets/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{%static 'css/assets/css/style.css'%}" rel="stylesheet">
+
+<style>
+.txt{
+text-color:red;}
+</style>
+</head>
+
+<body>
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">WorkON</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href=index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="{%url 'userpg'%}">Home</a></li>
+          <li><a class="nav-link scrollto" href="">Workers</a></li>
+          <li><a class="nav-link scrollto" href=""><span>{{request.user}}</span></a></li>
+
+          <li><a class="nav-link scrollto" href="{%url 'feedback'%}">Feedback</a></li>
+          <li><a class="nav-link scrollto" href="{%url 'login'%}">LOGOUT</a></li>
+
+        </ul>
+
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex justify-cntent-center align-items-center">
+    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+<div class="row">
+<div class="col-lg-3">
+<div class="card bg-dark text-white mb-3 txt" style="max-width: 18rem;">
+  <img src="images/carpenter.jpg" height="150px" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title">CARPENTER</h5>
+    <p class="card-text txt"></p>
+    <p>Wage per day is 700</p>
+    </div>
+  </div>
+</div>
+  <div class="col-lg-3">
+  <div class="card bg-dark text-white mb-3 txt" style="max-width: 18rem;">
+  <img src="images/cook.jpg" height="150px" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title">COOK</h5>
+    <p class="card-text txt"></p>
+    <p>Wage per day is 750</p>
+    </div>
+  </div>
+  </div>
+  <div class="col-lg-3">
+  <div class="card bg-dark text-white mb-3 " style="max-width: 18rem;">
+  <img src="images/plumber.jpg" height="150px" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title">PLUMBER</h5>
+    <p class="card-text txt"></p>
+    <p>Wage per day is 800</p>
+    </div>
+  </div>
+
+</div>
+  <div class="col-lg-3">
+  <div class="card bg-dark text-white mb-3 txt" style="max-width: 18rem;">
+  <img src="images/electritian.jpg" height="150px" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title">ELECTRICIAN</h5>
+    <p class="card-text txt"></p>
+    <p>Wage per day is 900</p>
+    </div>
+  </div>
+  </div>
+</div>
+      <div class="row">
+<div class="col-lg-3">
+<div class="card bg-dark text-white mb-3 txt" style="max-width: 18rem;">
+  <img src="images/teacher.jpg" height="150px" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title">TEACHER</h5>
+    <p class="card-text txt"></p>
+    <p>Wage per day is 1100</p>
+    </div>
+  </div>
+</div>
+  <div class="col-lg-3">
+  <div class="card bg-dark text-white mb-3 txt" style="max-width: 18rem;">
+  <img src="images/mining.jpg" height="150px" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title">MINING</h5>
+    <p class="card-text txt"></p>
+    <p>Wage per day is 850</p>
+    </div>
+  </div>
+  </div>
+  <div class="col-lg-3">
+  <div class="card bg-dark text-white mb-3 " style="max-width: 18rem;">
+  <img src="images/CONSTRUCTION.jpg" height="150px" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title">CONSTRUCTION</h5>
+    <p class="card-text txt"></p>
+    <p>Wage per day is 800</p>
+    </div>
+  </div>
+
+</div>
+  <div class="col-lg-3">
+  <div class="card bg-dark text-white mb-3 txt" style="max-width: 18rem;">
+  <img src="images/mechanic.jpg" height="150px" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title">MECHANIC</h5>
+    <p class="card-text txt"></p>
+    <p>Wage per day is 500</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <a href="{%url 'user-req'%}" class="btn-get-started animate__animated animate__fadeInUp scrollto">Request for workers</a>
+            <a href="{%url 'list'%}" class="btn-get-started animate__animated animate__fadeInUp scrollto">Edit request</a>
+        </div>
+      </div>
+
+
+
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{%extends 'work/base.html'%}
+
+{%block body_block%}
+<div class="row" >
+{%for item in work%}
+
+
+<div class="card" style="margin-top:20px">
+  <div class="card-body" >
+    {{item.Name}} is Interested in your request.<br> mobile number: {{item.Mobile}}.
+    <br>Description: {{item.description}}
+    <br>
+    <br>
+    contact {{item.Name}}. If you are ok with him Click submit else Click Remove
+<div style="margin-left:900px">
+    <a  href="{%url 'book' item.id%}" style="" class="btn btn-primary btn-sm">Submit</a>
+    <a href="{%url 'workerrequest-delete' item.id%}" style="" class="btn btn-primary btn-sm">Remove</a>
+</div>
+  </div>
+</div>
+
+{%endfor%}
+</div>
+
+
+
+
+
+
+{% endblock %}

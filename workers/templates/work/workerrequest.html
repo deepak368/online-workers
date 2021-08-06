@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{%extends 'work/base.html'%}
+
+{%block body_block%}
+
+<form action="" method="post">{%csrf_token%}
+
+            <div class="login-box">
+                <div class="login-snip"> <input  type="radio"  class="sign-in" checked>
+                    <label class="tab">SEND YOUR REPLY</label> <input  class="sign-up"><label  class="tab"></label>
+                    <div class="login-space">
+                        <div class="login">
+
+                             <div class="group">
+                                <label for="address" class="label">Clint</label>
+                                 {{form.Clint}}
+                             </div>
+                            <div class="group">
+                                <label for="address" class="label">Name</label>
+                                 {{form.Name}}
+                             </div>
+                            <div class="group">
+                                <label for="address" class="label">Mobile</label>
+                                 {{form.Mobile}}
+                             </div>
+                            <div class="group">
+                                <label for="address" class="label">Description</label>
+                                 {{form.description}}
+                             </div>
+                            <div class="group">
+                                <input type="submit" class="button" value="send">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </form>
+
+{% endblock %}
+

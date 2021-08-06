@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{%extends 'work/base.html'%}
+
+{%block body_block%}
+<div class="row" >
+{%for item in items%}
+
+  <div class="col-sm-6" style="margin-top:25px">
+  <div class="card text-white bg-secondary " >
+  <div class="card-body">
+    <h5 class="card-title">{{item.Work_type}}</h5>
+    <p class="card-text">Clint: {{item.user}} <br>Place:{{item.Place}}<br> Date: from {{item.start_date}} to {{item.end_date}}<br>Job description: {{item.Description}}</p>
+    <a href="{%url 'request-edit' item.id%}" class="btn btn-success">Edit</a>
+    <a href="{%url 'request-delete' item.id%}" class="btn btn-danger">Delete</a>
+
+
+  </div>
+</div>
+</div>
+
+{%endfor%}
+</div>
+{% endblock %}

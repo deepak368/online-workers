@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{%extends 'work/base.html'%}
+
+{%block body_block%}
+
+<table class="table table-success table-striped">
+    <tr>
+        <td>Clint_username</td>
+        <td>Worker_username</td>
+        <td>worker_mobile</td>
+        <td>Description</td>
+
+
+
+    </tr>
+{%for worker in workers%}
+<tr>
+        <td>{{worker.Clint}}</td>
+        <td>{{worker.Name}}</td>
+        <td>{{worker.Mobile}}</td>
+        <td>{{worker.description}}</td>
+
+
+</tr>
+{%endfor%}
+</table>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+{% endblock %}

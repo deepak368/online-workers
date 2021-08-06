@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{%extends 'work/base.html'%}
+
+{%block body_block%}
+
+
+<div class="row" >
+{%for user in users%}
+
+  <div class="col-sm-6" style="margin-top:25px">
+  <div class="card text-white bg-secondary " >
+  <div class="card-body">
+    <h5 class="card-title" autocapitalize="characters">{{user.Work_type}}</h5>
+    <p class="card-text">User:{{user.user}},Place:  {{user.Place}}<br> Date:  from {{user.start_date}}  to  {{user.end_date}}<br>Job description: {{user.Description}}</p>
+    <a href="{%url 'worker-request' user.id%}" class="btn btn-primary">intrested</a>
+
+  </div>
+</div>
+</div>
+
+{%endfor%}
+</div>
+{% endblock %}
